@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <h1 id="title"> Getting to know you Form </h1>
+
+    <div class="main">
+        <p id="description"> This survey is to get to know you better. </p>
+        <form id="survey-form">
+
+            <div class="info-con-top">
+                <div class="info-con">
+                    <label id="name-label" class="text info">Name:</label>
+                    <div>
+                        <input type="text" id="name" placeholder="Enter your Full Name" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="info-con">
+                    <label id="email-label" class="text info">Email:</label>
+                    <div>
+                        <input type="email" id="email" placeholder="Email is required" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="info-con">
+                    <label id="number-label" class="text info">Age:</label>
+                    <div>
+                        <input type="number" id="number" placeholder="Age" required min="18" max="100">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="radio-input-con">
+                <h3 class="text">My pronouns are</h3>
+                <div class="radio-input">
+                    <div>
+                        <input type="radio" name="pronouns" value="0">
+                        <label class="text"> He Him His</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pronouns" value="1">
+                        <label class="text"> She Her Hers</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pronouns" value="2">
+                        <label class="text"> They Them Theirs</label>
+                    </div>
+                </div>
+            </div>
+            <div class="gender-con">
+                <h3 class="text gender">My gender is</h3>
+                <select name="Sex" id="dropdown">
+                    <option value="Male" name="Male" class="text">Male</option>
+                    <option value="Female" name="Female" class="text">Female</option>
+                    <option value="Other" name="Other" class="text">Other</option>
+                </select>
+            </div>
+
+            <div class="info-con">
+                <h3 class="text">Can we contact you with future surveys</h3>
+                <label class="text">Yes</label><input type="checkbox" value="yes">
+                <label class="text">No</label><input type="checkbox" value="no">
+            </div>
+            <br>
+            <textarea placeholder="Tell us more about yourself" cols=37 rows=5 maxlength="300"></textarea>
+            <br>
+            <input id="submit" type="Submit">
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

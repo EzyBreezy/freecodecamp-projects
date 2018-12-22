@@ -1,0 +1,112 @@
+body, html {
+    background: #162934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+textarea {
+    border: none;
+    resize: none;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+#title {
+    
+    animation: hover 2s infinite;
+    font-family: 'Pacifico', cursive;
+    color: cyan;
+    text-shadow: 0 3px 80px #00d8ff;
+    font-size: 60px;
+    margin-bottom: 50px;
+    transform: rotate(-5deg);
+    border-bottom: rgb(0, 206, 206) solid 5px;
+}
+#description {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+    margin-top: 0px;
+}
+
+/* source https://blog.rudolphk.co.za/css-tip-remove-spinner-on-input-of-number-9fc4d9cac121 */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+#number {
+
+    appearance: none;
+}
+
+.text {
+    font-family: 'Quicksand', sans-serif;
+}
+.gender {
+    padding-right: 10px;
+}
+
+.main {
+    text-align: center;
+    width: 600px;
+    height: 600px;
+    max-width: 960px;
+    max-height: 600px;
+    background: #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-self: auto;
+    flex-direction: column;
+    box-shadow: 0px 8px 20px 9px #1c2228;
+}
+.info-con-top {
+    display: flex;
+    flex-direction: column;
+}
+.info-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+.gender-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info {
+    font-size: 25px;
+}
+
+
+
+.radio-input {
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes hover {
+    0% {
+       
+    }
+    25% {
+       
+    }
+    50% {
+        
+    }
+    100% {
+     
+    }
+}
