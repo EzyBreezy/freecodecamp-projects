@@ -2,12 +2,11 @@
 
 
 ### Responsive Web Design Projects
-[x] [Tribute Page](http://www.fcc_haile_selassie_tribute.surge.sh/) 
-<enter>
-[x] [Survey Form](http://www.gettingtoknowyouformfcc.surge.sh/)
-[ ] Product Landing Page
-[ ] Technical Documentation Page
-[ ] Personal Portfolio Webpage
+- [x] [Tribute Page](http://www.fcc_haile_selassie_tribute.surge.sh/) 
+- [x] [Survey Form](http://www.gettingtoknowyouformfcc.surge.sh/)
+- [ ] Product Landing Page
+- [ ] Technical Documentation Page
+- [ ] Personal Portfolio Webpage
 
 ### JavaScript Algorithms and Data Structures Projects
 [ ] Palindrome Checker
