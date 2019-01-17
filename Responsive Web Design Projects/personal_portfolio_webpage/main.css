@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: rgb(75, 75, 75);
+    --main-background: rgb(255, 255, 255);
+    --content-background: rgb(136, 136, 136);
+    --link: rgb(0, 195, 255);
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 1.6rem;
+    background: var(--content-background);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 70px;
+    z-index: 1;
+}
+
+.main-content {
+    position: relative;
+    top: 80px;
+}
+#welcome-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    margin: 0;
+}
+.description {
+    margin: 0;
+}
+
+#about {
+    height: 100vh;
+    width: 100vw;
+}
+
+#projects {
+    height: 100vh;
+    width: 100vw;
+}
