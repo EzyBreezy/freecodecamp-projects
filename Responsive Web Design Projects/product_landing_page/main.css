@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: rgb(75, 75, 75);
+    --main-background: rgb(255, 255, 255);
+    --content-background: rgb(136, 136, 136);
+    --link: rgb(0, 195, 255);
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.nav-link, .link {
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 4px;
+}
+
+#header {
+    min-width: 100vw;
+    background: var(--content-background);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#header-img {
+    align-self: center; /* Flex-box stretches image without align-self: center.*/
+    width: 15vw;
+}
+#nav-bar {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-link {
+    color: var(--link);
+}
+
+
+#main {
+    flex: 1;
+    background: var(--main-background);
+    color: var(--text-color);
+    position: relative;
+    top: 90px;
+}
+#main-email-con {
+    background: var(--content-background);
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-items: center;
+    text-align: center;
+    margin: 4vh auto; /* center email box container */
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0px 3px 19px 0px #393939;
+}
+#form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#email {
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 4px solid var(--link);
+    border-radius: 3px;
+    color: white;
+    width: 200px;
+}
+#email::placeholder {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.157rem;
+}
+#submit {
+    border: none;
+    border-radius: 4px;
+    background: rgb(105, 105, 105);
+    color: white;
+}
+#submit:hover {
+    background: var(--link)
+}
+
+.video-con {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.75%;
+}
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#product-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3vh 3vw;
+}
+
+.product {
+    border: 1px solid black;
+    border-radius: 9px;
+    text-align: center;
+    background: white;
+    box-shadow: 0px 3px 19px 0px #393939;
+}
+.product-info {
+    margin: 10px;
+}
+#pricing {
+    color: burlywood;
+}
+
+
+#product-image {
+    width: 300px;
+}
+
+#footer {
+    min-width: 100vw;
+    background: var(--content-background);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#footer-link {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.link {
+    color: var(--link)
+}
+#footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.brand-name {
+    color: red;
+    font-weight: 900;
+}
+
+
+@media (min-width: 800px) {
+    
+}
