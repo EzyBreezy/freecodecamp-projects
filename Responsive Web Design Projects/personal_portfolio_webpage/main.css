@@ -13,20 +13,118 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     font-family: Arial,Helvetica,sans-serif;
 }
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+/* navbar */
+
+#nav-title {
+    /* my name mobile display none*/
+    border: 0;
+    margin: 0;
+    color: rgb(200, 200, 200);
+    display: inline;
+}
 
 #navbar {
+    width: 100vw;
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
-    font-size: 1.6rem;
-    background: var(--content-background);
+    align-items: center;
+
+    font-size: 0.8rem;
+
+    position: fixed;
+    right: 0;
+    z-index: 1;
+
+    background: rgb(19, 19, 19);
+}
+.ul-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 10px 0;
+}
+.nav-link-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3vw;
+    color: rgb(200, 200, 200);
+}
+
+.nav-link-con h2 {
+    margin: 0;
+}
+
+
+/* Welcome Section */
+
+#welcome-section {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(./image/austin-poon-728200-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ul-profile-link {
+    display: flex;
+    flex-direction: row; /* mobile version vertically */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-link-li {
+    
+    margin: 1vw;
+
+    width: 90px;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgb(236, 236, 236);
+    border-radius: 5px;
+    border: 1px solid rgb(66, 66, 66);
+}
+
+.profile-link {
+    color: rgb(68, 68, 68);
+}
+
+/* #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    background:#33313b;
     height: 80px;
     width: 100%;
     position: fixed;
@@ -41,24 +139,67 @@ html, body {
 #welcome-section {
     height: 100vh;
     width: 100vw;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
+    background-image: url(./image/austin-poon-728200-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
-.title {
+
+.title, .description {
     margin: 0;
+    color: white;
+    text-shadow: 3px 3px black;
+    text-shadow: 1px 0px 14px black;
+    font-size: 2rem;
 }
-.description {
-    margin: 0;
+
+.profile-link {
+    background: white;
 }
 
 #about {
-    height: 100vh;
     width: 100vw;
+    background: #3c4f65;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-wrap: break-word;
+    overflow: hidden;
 }
 
 #projects {
+    height: 60vh;
+    width: 100vw;
+    background: #834c69;
+    display: flex;
+    flex-direction: column;
+}
+#contact {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3rem;
+    background: #e6f5ff;
 }
+
+.unsplash-credit {
+    background-color:black;
+    color: white;
+    text-decoration: none;
+    padding: 4px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: inline-block;
+    border-radius:3px"
+} */
