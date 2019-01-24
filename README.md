@@ -6,7 +6,7 @@
 - [x] [Survey Form](http://www.gettingtoknowyouformfcc.surge.sh/)
 - [X] [Product Landing Page](http://www.thinkwarefcc.surge.sh)
 - [ ] Technical Documentation Page
-- [ ] Personal Portfolio Webpage
+- [x] [Personal Portfolio Webpage](http://www.ezybreezyfcc.surge.sh)
 
 ### JavaScript Algorithms and Data Structures Projects
 - [ ] Palindrome Checker
