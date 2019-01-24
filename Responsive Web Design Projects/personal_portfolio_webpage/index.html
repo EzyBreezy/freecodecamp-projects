@@ -110,11 +110,8 @@
                 <div class="project-card-con project-tile">
                     <h2> Tribute Page </h2>
                     <img src="./image/Screen Shot 2019-01-19 at 2.59.02 AM.png" class="project-image">
-                    <p> This is a project from FreeCodeCamp Responsive Design. I chose to do a project on Haile
-                        Selassie
-                        where I learned a great deal about one of the Kings from ethiopia.
-                        I wanted to try and make it in a timeline manner using CSS. </p>
-                    <div>
+                    <p> This is a project from FreeCodeCamp Responsive Design. Made a timeline tribute page on Haile Selassie using HTML5 and CSS3. </p>
+                    <div class="project-link-con">
                         <a href="https://github.com/EzyBreezy/freecodecamp-projects/tree/master/Responsive%20Web%20Design%20Projects/tribute_page">Github</a>
                         <a href="http://fcc_haile_selassie_tribute.surge.sh/" target="_blank" class="project-tile">Live
                             Demo</a>
@@ -127,7 +124,7 @@
                     <p> This is a project that I used Express, Mongoose, Handlebars to render page to users.
                         I applied full CRUD (Create, Read, Update, Delete).
                     </p>
-                    <div>
+                    <div class="project-link-con">
                         <a href="https://github.com/EzyBreezy/Vision-Board">Github</a>
                         <a href="#">Live Demo</a>
                     </div>
@@ -138,7 +135,7 @@
                     <img src="http://via.placeholder.com/350x150" class="project-image">
                     <p> This is a project where I applied JavaScript to render to the DOM of the HTML with CSS styling.
                     </p>
-                    <div>
+                    <div class="project-link-con">
                         <a href="https://github.com/EzyBreezy/Hangman">Github</a>
                         <a href="#">Live Demo</a>
                     </div>
@@ -148,7 +145,7 @@
                     <h2> Portfolio Site </h2>
                     <img src="http://via.placeholder.com/350x150" class="project-image">
                     <p> I created a React portfolio site with components. </p>
-                    <div>
+                    <div class="project-link-con">
                         <a href="https://github.com/EzyBreezy/react-portfolio-website">Github</a>
                         <a href="#">Live Demo</a>
                     </div>
@@ -159,18 +156,19 @@
 
         <section id="contact-section">
             <form action="index.php" method="POST" class="contact-form">
-                    <input type="text" name="name" placeholder="Name" class="contact-field">
+                    <h2> Feel free to contact me!  </h2>
+                    <input type="text" name="name" required placeholder="Name" class="contact-field">
                     <input type="email" name="email" placeholder="Email" class="contact-field">
                     <input type="tel" name="phone" placeholder="Your Phone Number">
                     <input type="text" name="subject" placeholder="Subject" class="contact-field">
-                    <textarea name="message"  type="text" placeholder="Your Message" class="contact-field"></textarea>
-                    <input type="submit" value="Submit">
+                    <textarea name="message" required type="text" placeholder="Your Message" class="contact-field"></textarea>
+                    <input type="submit" name="submit" value="Submit">
             </form>
         </section>
     </main>
     <footer>
         <p> FreeCodeCamp Project by <b>Ezana Bahta</b> </p>
-        <img src="image/EBMonoGram.png" class="footer-brand">
+        <img src="image/EBMonoGram.png" alt="ezana bahta brand image" class="footer-brand">
     </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>

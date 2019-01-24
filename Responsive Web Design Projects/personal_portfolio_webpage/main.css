@@ -51,7 +51,10 @@ input {
     font-size: 1rem;
 
     position: fixed;
+    top: 0;
+    left: 0;
     right: 0;
+    bottom: initial;
     z-index: 100;
 
     background: rgb(19, 19, 19);
@@ -161,15 +164,18 @@ input {
 }
 .about-section-con p, .about-section-con h2 {
     padding: 0 35px;
+    font-size: 2rem;
+}
+.about-section-con a {
+    color: white;
+    font-weight: 900;
 }
 
 /* projects */
 
 #projects {
-
-
-    background-image: linear-gradient(to bottom, rgb(19, 19, 19), #FF6B6B)
-
+    background-image: linear-gradient(to bottom, rgb(19, 19, 19), #FF6B6B);
+    padding: 40px 0;
 }
 #projects-con {
     display: flex;
@@ -196,6 +202,19 @@ input {
 }
 .project-card-con p {
     padding: 10px;
+    font-size: 1.8rem;
+}
+.project-link-con {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 900;
+}
+.project-link-con a{
+    color: rgb(87, 1, 15);
+    
+    border-radius: 5px;
 }
 .project-image {
     width: 350px;
@@ -244,10 +263,26 @@ footer {
     justify-content: flex-end;
     align-items: flex-end;
 
+    margin-bottom: 40px;
+
     background: #556270;
 }
 .footer-brand {
     height: 5vh;
     padding: 0 20px;
     margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 812px) {
+    #nav-title {
+        display: none;
+    }
+    #navbar {
+        position: fixed;
+        top: initial;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 2rem;
+    }
 }
