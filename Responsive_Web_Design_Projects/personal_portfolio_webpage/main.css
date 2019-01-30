@@ -9,7 +9,6 @@
     --link: rgb(0, 195, 255);
 }
 
-
 html, body {
     margin: 0;
     padding: 0;
@@ -18,14 +17,17 @@ html, body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 a {
     text-decoration: none;
 }
+
 ul {
     list-style-type: none;
 }
+
 input {
     border: none;
 }
@@ -41,23 +43,20 @@ input {
 
 #navbar {
     width: 100vw;
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
     font-size: 1rem;
-
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: initial;
     z-index: 100;
-
     background: rgb(19, 19, 19);
 }
+
 .ul-navbar {
     display: flex;
     flex-direction: row;
@@ -66,6 +65,7 @@ input {
     padding: 0;
     margin: 10px 0;
 }
+
 .nav-link-con {
     display: flex;
     flex-direction: column;
@@ -81,17 +81,16 @@ input {
 
 #welcome-section {
     height: 100vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background-image: url(./image/austin-poon-728200-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .profile-picture {
     width: 400px;
     border-radius: 50%;
@@ -99,12 +98,14 @@ input {
     box-shadow: 0 0 80px white;
     z-index: 1;
 }
+
 .main-title {
     font-size: 4.5rem;
     margin-bottom: 0;
     color: rgb(236, 236, 236);
     text-shadow: 0 5px 10px black;
 }
+
 .main-description {
     font-size: 3rem;
     margin-top: 0;
@@ -120,18 +121,14 @@ input {
     align-items: center;
 }
 
-.profile-link-li a{
-    
+.profile-link-li a {
     margin: 1vw;
-
     width: 90px;
     height: 30px;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
     background: rgb(236, 236, 236);
     border-radius: 5px;
     border: 1px solid rgb(66, 66, 66);
@@ -147,19 +144,21 @@ input {
     padding: 40px 0;
     background: rgb(19, 19, 19);
     color: white;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
 .about-section-con {
     width: 1000px;
 }
+
 .about-section-con p, .about-section-con h2 {
     padding: 0 35px;
     font-size: 2rem;
 }
+
 .about-section-con a {
     color: white;
     font-weight: 900;
@@ -171,33 +170,34 @@ input {
     background-image: linear-gradient(to bottom, rgb(19, 19, 19), #FF6B6B);
     padding: 40px 0;
 }
+
 #projects-con {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
 }
+
 .project-card-con {
     width: 360px;
     margin: 40px;
     padding-bottom: 25px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 0 0 50px black;
     background: rgb(236, 236, 236);
-
 }
+
 .project-card-con p {
     padding: 10px;
     font-size: 1.8rem;
 }
+
 .project-link-con {
     width: 90%;
     display: flex;
@@ -205,17 +205,19 @@ input {
     justify-content: space-around;
     font-weight: 900;
 }
-.project-link-con a{
+
+.project-link-con a {
     color: rgb(87, 1, 15);
-    
     border-radius: 5px;
 }
+
 .project-image {
     width: 350px;
     height: 150px;
 }
 
 /* contact */
+
 #contact-section {
     height: 90vh;
     background-image: linear-gradient(to top, #556270, #FF6B6B);
@@ -228,29 +230,27 @@ input {
 .contact-form {
     height: 60vh;
     width: 80vw;
-
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-direction: column;
-    
     padding: 25px 25px 0 25px;
-
     background: rgb(245, 245, 245);
     border-radius: 5px;
-
     box-shadow: 0px 10px 30px black
 }
+
 .contact-field {
     display: flex;
     align-self: stretch;
-
 }
+
 input, textarea {
     font-size: 1.7rem;
 }
 
 /* Footer */
+
 footer {
     display: flex;
     flex-direction: row;
@@ -259,6 +259,7 @@ footer {
     margin-bottom: 0;
     background: #556270;
 }
+
 .footer-brand {
     height: 5vh;
     padding: 0 20px;
@@ -267,21 +268,14 @@ footer {
 
 /* Hover */
 
-
 /* Mobile Phones */
-@media (min-width: 800px) {
-    #nav-title {
-        display: none;
-    }
-    #navbar {
-        position: fixed;
-        bottom: 0;
-        top: initial;
-        font-size: 2rem;
-    }
-}
 
-@media (min-width: 961px) {
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
     #nav-title {
         display: inline;
     }
@@ -291,6 +285,127 @@ footer {
         left: 0;
         right: 0;
         bottom: initial;
+        font-size: 1rem;
+    }
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #nav-title {
+        display: inline;
+    }
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: initial;
+        font-size: 1rem;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #nav-title {
+        display: none;
+    }
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: initial;
+        font-size: 1.2rem;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #nav-title {
+        display: inline;
+    }
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: initial;
+        font-size: 1rem;
+    }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #nav-title {
+        display: none;
+    }
+    #navbar {
+        position: fixed;
+        bottom: 0;
+        top: initial;
+        font-size: 1rem;
+    }
+    footer {
+        padding: 0 0 100px 0;
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #nav-title {
+        display: none;
+    }
+    #navbar {
+        position: fixed;
+        bottom: 0;
+        top: initial;
+        font-size: 0.8rem;
+    }
+    .profile-picture {
+        width: 200px;
+    }
+    .main-title {
+        font-size: 2.4rem;
+        margin-bottom: 0;
+        color: rgb(236, 236, 236);
+        text-shadow: 0 5px 10px black;
+    }
+    .main-description {
+        font-size: 1.4rem;
+        margin-top: 0;
+        color: rgb(243, 0, 0);
+        font-weight: 700;
+        text-shadow: 0 1px 15px black;
+    }
+    #ul-profile-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    /* about */
+    .about-section-con p, .about-section-con h2 {
+        padding: 0 18px;
         font-size: 1.5rem;
     }
 }
